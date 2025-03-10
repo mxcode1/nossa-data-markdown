@@ -26,6 +26,7 @@ markdown-scraper/
 └── README.md               # This documentation file
 ````
 🚀 How to Run the App
+
 1️⃣ Install Python (If Not Installed)
 
 Make sure you have Python 3.6+ installed. Check using:
