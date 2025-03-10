@@ -95,11 +95,12 @@ The generated JSON follows this structure:
 }
 
 🔹 Explanation of JSON Fields
-Key	Description
-"id"	Unique ID for the report
-"name"	Filename of the report
-"file_path"	Absolute path to the file
-"word_count"	Total number of words in the report
-"topics"	Dictionary grouping extracted paragraphs by topic
-"line_number"	Line number where the topic is mentioned
-"text"	The paragraph mentioning the topic
+| Field | Description |
+|-------|-------------|
+| `id` | Unique ID for the report |
+| `name` | Filename of the report |
+| `file_path` | Absolute path to the file |
+| `word_count` | Total number of words in the report |
+| `topics` | Dictionary grouping extracted paragraphs by topic |
+| `line_number` | Line number where the topic is mentioned |
+| `text` | The paragraph mentioning the topic |
