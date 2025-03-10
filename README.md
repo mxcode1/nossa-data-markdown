@@ -54,6 +54,7 @@ output/nossa_json_report_2025-03-10_14-35-22.json
 
 The generated JSON follows this structure:
 
+```Example JSON Output
 {
   "reports": [
     {
@@ -93,6 +94,7 @@ The generated JSON follows this structure:
     }
   ]
 }
+```
 
 🔹 Explanation of JSON Fields
 | Field | Description |
