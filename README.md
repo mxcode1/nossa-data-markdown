@@ -10,21 +10,21 @@ The output JSON includes:
     Line numbers for topic mentions
 
 📂 Project Structure
-
+````
 markdown-scraper/
-├── reports/                    # Folder containing Markdown reports
+├── reports/                # Folder containing Markdown reports
 │   ├── bluewave_report.md
 │   ├── ecotech_report.md
 │   ├── sunpower_report.md
 │   └── ... (additional .md files)
-├── output/                     # Folder where JSON reports are saved
-│   ├── nossa_json_report_YYYY-MM-DD_HH-MM-SS.json
-├── main.py                      # Main script to process reports
-├── file_reader.py                # Reads Markdown files
-├── word_counter.py               # Counts words accurately
-├── topic_extractor.py            # Extracts paragraphs mentioning key topics
-└── README.md                     # This documentation file
-
+├── output/                 # Folder where JSON reports are saved
+│   └── nossa_json_report_YYYY-MM-DD_HH-MM-SS.json
+├── main.py                 # Main script to process reports
+├── file_reader.py          # Reads Markdown files
+├── word_counter.py         # Counts words accurately
+├── topic_extractor.py      # Extracts paragraphs mentioning key topics
+└── README.md               # This documentation file
+````
 🚀 How to Run the App
 1️⃣ Install Python (If Not Installed)
 
