@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 
 import file_reader
 import word_counter
@@ -7,6 +8,10 @@ import topic_extractor
 import get_reports
 
 def main():
+    # File Output Paramaters
+    output_directory_name = 'output'
+    output_file_name = 'nossa_json_report'
+
     # List of report file paths (assumes the files are in the same directory)
     files = get_reports.get_report_files()
     
@@ -42,9 +47,19 @@ def main():
                 "topics": paragraphs_by_topic
             }
             results.append(report_obj)
+
+        # Create Output Directory and Timestamp for File Naming    
+        os.makedirs(output_directory_name, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         
+        # Prepare Output / File Naming 
+        output_path = os.path.join(output_directory_name, f'{output_file_name}_{timestamp}')
+    
+        # Create JSON Object
         output = {"reports": results}
-        with open('json_report',"w",encoding="utf-8") as f:
+
+        # Dump To File
+        with open(output_path,"w",encoding="utf-8") as f:
             json.dump(output, f, indent=2)
 
         return json.dumps(output, indent=2)
