@@ -7,6 +7,7 @@ def get_report_files(directory="reports"):
     """
     # Get the absolute path to the reports directory relative to this file
     reports_path = os.path.join(os.path.dirname(__file__), directory)
+    
     # List all files in the reports directory that end with '.md'
     report_files = [
         os.path.join(reports_path, file)

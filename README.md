@@ -2,6 +2,8 @@ Markdown Scraper Docs
 
 This Python application scans Markdown (.md) reports, extracts relevant information, and generates a structured JSON report.
 
+This JSON could be parsed or integrated with other data systems or tools to use the data in production
+
 The output JSON includes:
 
     File details (name, path, word count)
@@ -23,12 +25,12 @@ report_processor/
 │   ├── ....
 ├── report_processor/              # Main processing package
 │   ├── __init__.py                # Marks report_processor as a package
+│   ├── main.py                    # Main script to process reports
 │   ├── file_reader.py             # Reads Markdown files
 │   ├── get_reports.py             # Retrieves report files
 │   ├── topic_extractor.py         # Extracts paragraphs mentioning key topics
 │   ├── word_counter.py            # Counts words accurately
 ├── .gitignore                     # Git ignore rules
-├── main.py                        # Main script to process reports
 ├── README.md                      # Project documentation
 ├── requirements.txt               # Install external dependencies 
 ````
@@ -45,7 +47,13 @@ Check using: python --version
 git clone https://github.com/mxcode1/nossa-data-markdown
 cd markdown-scraper
 
-### Run the Script (in report_processor directory)
+### Install Dependencies / Requrements.text
+
+To install spacy and pytest dependencies use the provided requirements.txt
+
+pip install -r requirements.txt
+
+### Run The Application (in report_processor directory)
 
 python main.py
 

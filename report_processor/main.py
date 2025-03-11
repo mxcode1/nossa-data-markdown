@@ -28,17 +28,11 @@ def main():
     
     # Readout Files Loaded for Analysis
     for filepath in files:
-        for i, file_path in enumerate(files, 1):
-            # Extract just the filename without path
-            file_name = os.path.basename(file_path)
-            print(f"{i}. {file_name}")
-
-        # Onboard files for Analysis
+        print(f'Processing [{len(files)}] Files')
         content = file_reader.read_file(filepath)
-        
-        
         results = []
 
+        # Iterate through all Files - print to console and convert to JSON
         for idx, file_path in enumerate(get_reports.get_report_files(), start=1):
             file_name = os.path.basename(file_path)
             content = file_reader.read_file(file_path)
@@ -53,6 +47,7 @@ def main():
                 "topics": paragraphs_by_topic
             }
             results.append(report_obj)
+            print(f"{idx}. {file_name}")
 
         # Create Output Directory and Timestamp for File Naming    
         os.makedirs(output_directory_name, exist_ok=True)
