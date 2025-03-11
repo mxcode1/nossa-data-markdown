@@ -92,6 +92,15 @@ def test_topic_extractor_with_test_markdown(test_markdown_path):
     assert len(topics_result["Climate Risk Management"]) >= 1
     # Similarly for "Water Risk Management".
     assert len(topics_result["Water Risk Management"]) >= 1
+    
     # For "Employees", check if the paragraph contains the expected text.
     employee_paragraphs = topics_result["Employees"]
-    assert any("employees are our greatest asset" in para.lower() for para in employee_paragraphs)
+    assert any("employees are our greatest asset" in para["text"].lower() for para in employee_paragraphs)
+    
+    # Check that the data structure includes the required fields
+    for topic in TOPICS:
+        for paragraph in topics_result[topic]:
+            assert "line_number" in paragraph
+            assert "text" in paragraph
+            assert isinstance(paragraph["line_number"], int)
+            assert isinstance(paragraph["text"], str)
