@@ -30,30 +30,31 @@ report_processor/
 ├── .gitignore                     # Git ignore rules
 ├── main.py                        # Main script to process reports
 ├── README.md                      # Project documentation
+├── requirements.txt               # Install external dependencies 
 ````
 🚀 How to Run the App
 
 ### Install Python (If Not Installed)
 
-Make sure you have Python 3.6+ installed. Check using:
+Install Python 3.11 
 
-python --version
+Check using: python --version
 
 ### Clone the Repository
 
-git clone https://github.com/mxcode1/markdown-scraper.git
+git clone https://github.com/mxcode1/nossa-data-markdown
 cd markdown-scraper
 
-### Run the Script (from root directory)
+### Run the Script (in report_processor directory)
 
 python main.py
 
 ### View the Generated JSON
 
-After running the script, the JSON output will be saved inside the output/ folder
+After running the script, the JSON output will be saved inside the /output folder
 You can use a JSON viewer such as https://jsonviewer.stack.hu/# to review the structure of the data output
 
-Example:
+Example Data Report:
 
 output/nossa_json_report_2025-03-10_14-35-22.json
 

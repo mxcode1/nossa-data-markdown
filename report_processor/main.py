@@ -26,8 +26,14 @@ def main():
         "Forests"
     ]
     
+    # Readout Files Loaded for Analysis
     for filepath in files:
-        print(f"Processing file: {filepath}\n{'=' * 40}")
+        for i, file_path in enumerate(files, 1):
+            # Extract just the filename without path
+            file_name = os.path.basename(file_path)
+            print(f"{i}. {file_name}")
+
+        # Onboard files for Analysis
         content = file_reader.read_file(filepath)
         
         
