@@ -10,19 +10,26 @@ The output JSON includes:
 
 📂 Project Structure
 ````
-markdown-scraper/
-├── reports/                # Folder containing Markdown reports
+report_processor/
+├── output/                      # Folder where JSON data reports are saved with UID / Timestamp
+│   ├── nossa_json_report_2025-03-10_19-13-31.json
+├── reports/                     # Source Folder for providing Markdown reports for Analysis / Batch Processing
 │   ├── bluewave_report.md
 │   ├── ecotech_report.md
-│   ├── sunpower_report.md
-│   └── ... (additional .md files)
-├── output/                 # Folder where JSON reports are saved
-│   └── nossa_json_report_YYYY-MM-DD_HH-MM-SS.json
-├── main.py                 # Main script to process reports
-├── file_reader.py          # Reads Markdown files
-├── word_counter.py         # Counts words accurately
-├── topic_extractor.py      # Extracts paragraphs mentioning key topics
-└── README.md               # This documentation file
+│   ├── globaltrade_report.md
+├── tests/                        # Folder containing Pytest scripts
+│   ├── __init__.py               # Marks the tests folder as a package
+│   ├── test_file_reader.py        # Unit tests for file reading
+│   ├── ....
+├── report_processor/              # Main processing package
+│   ├── __init__.py                # Marks report_processor as a package
+│   ├── file_reader.py             # Reads Markdown files
+│   ├── get_reports.py             # Retrieves report files
+│   ├── topic_extractor.py         # Extracts paragraphs mentioning key topics
+│   ├── word_counter.py            # Counts words accurately
+├── .gitignore                     # Git ignore rules
+├── main.py                        # Main script to process reports
+├── README.md                      # Project documentation
 ````
 🚀 How to Run the App
 
