@@ -42,16 +42,16 @@ Install Python 3.11
 Check using: python --version
 
 ### Clone the Repository
-
+````
 git clone https://github.com/mxcode1/nossa-data-markdown
-cd markdown-scraper
-
+cd report_processor
+````
 ### Install Dependencies / Requrements.text
 
 To install spacy and pytest dependencies use the provided requirements.txt
-
+````
 pip install -r requirements.txt
-
+````
 ### Pytest 
 
 For future development - Pytest test cases have been setup to verify changes to the different modules and functions
@@ -68,9 +68,9 @@ After running the script, the JSON output will be saved inside the /output folde
 You can use a JSON viewer such as https://jsonviewer.stack.hu/# to review the structure of the data output
 
 Example Data Report:
-
+````
 output/nossa_json_report_2025-03-10_14-35-22.json
-
+````
 📝 JSON Output Structure
 
 The generated JSON follows this structure:
