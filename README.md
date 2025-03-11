@@ -64,7 +64,7 @@ python main.py
 ````
 ### View the Generated JSON
 
-After running the script, the JSON output will be saved inside the /output folder
+After running the script, the JSON output will be saved into /output folder
 You can use a JSON viewer such as https://jsonviewer.stack.hu/# to review the structure of the data output
 
 Example Data Report:
