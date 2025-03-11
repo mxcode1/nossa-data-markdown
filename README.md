@@ -58,9 +58,9 @@ For future development - Pytest test cases have been setup to verify changes to 
 
 These tests can be run to verify code updates using Pytest (configured for Python 3.11)
 
-### Run The Application from report_processor sub-directory 
+### Run The Application from Root Directory 
 ````
-python main.py
+ python .\report_processor\main.py
 ````
 ### View the Generated JSON
 
