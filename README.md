@@ -30,7 +30,6 @@ report_processor/
 │   ├── get_reports.py             # Retrieves report files
 │   ├── topic_extractor.py         # Extracts paragraphs mentioning key topics
 │   ├── word_counter.py            # Counts words accurately
-├── .gitignore                     # Git ignore rules
 ├── README.md                      # Project documentation
 ├── requirements.txt               # Install external dependencies 
 ````
