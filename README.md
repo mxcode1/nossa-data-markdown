@@ -25,7 +25,7 @@ report_processor/
 │   ├── ....
 ├── report_processor/              # Main processing package
 │   ├── __init__.py                # Marks report_processor as a package
-│   ├── main.py                    # Main script to process reports
+│   ├── main.py                    # Main Driver script to run application and analyse reports
 │   ├── file_reader.py             # Reads Markdown files
 │   ├── get_reports.py             # Retrieves report files
 │   ├── topic_extractor.py         # Extracts paragraphs mentioning key topics
