@@ -1,5 +1,4 @@
-Markdown Scraper
-📌 Overview
+Markdown Scraper Docs
 
 This Python application scans Markdown (.md) reports, extracts relevant information, and generates a structured JSON report.
 
@@ -27,22 +26,22 @@ markdown-scraper/
 ````
 🚀 How to Run the App
 
-1️⃣ Install Python (If Not Installed)
+### Install Python (If Not Installed)
 
 Make sure you have Python 3.6+ installed. Check using:
 
 python --version
 
-2️⃣ Clone the Repository
+### Clone the Repository
 
 git clone https://github.com/mxcode1/markdown-scraper.git
 cd markdown-scraper
 
-3️⃣ Run the Script (from root directory)
+### Run the Script (from root directory)
 
 python main.py
 
-4️⃣ View the Generated JSON
+### View the Generated JSON
 
 After running the script, the JSON output will be saved inside the output/ folder
 You can use a JSON viewer such as https://jsonviewer.stack.hu/# to review the structure of the data output

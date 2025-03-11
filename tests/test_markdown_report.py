@@ -1,9 +1,9 @@
 import os
 import pytest
 
-from report_processor import file_reader as file_reader 
-from report_processor import topic_extractor as topic_extractor
-from report_processor import word_counter as word_counter
+from report_processor import file_reader
+from report_processor import topic_extractor
+from report_processor import word_counter
 
 
 # Define the topics to search for
