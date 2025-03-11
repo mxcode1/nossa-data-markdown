@@ -53,7 +53,13 @@ To install spacy and pytest dependencies use the provided requirements.txt
 
 pip install -r requirements.txt
 
-### Run The Application (in report_processor directory)
+### Pytest 
+
+For future development - Pytest test cases have been setup to verify changes to the different modules and functions
+
+These tests can be run to verify code updates using Pytest (configured for Python 3.11)
+
+### Run The Application (in /report_processor sub directory)
 
 python main.py
 
