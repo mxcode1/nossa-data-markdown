@@ -28,7 +28,7 @@ def main():
     
     # Readout Files Loaded for Analysis
     for filepath in files:
-        print(f'Printing [{len(files)}] Files')
+        print(f'Processing [{len(files)}] Files')
         content = file_reader.read_file(filepath)
         results = []
 
